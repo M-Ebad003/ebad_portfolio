@@ -8,7 +8,7 @@ const FONT_WEIGHTS = {
 };
 
 const setupTextHover = (container, type) => {
-  if (!container) return;
+  if (!container) return () => {};
 
   const letters = container.querySelectorAll("span");
   const { min, max, default: base } = FONT_WEIGHTS[type];
@@ -75,14 +75,10 @@ const Welcome = () => {
   return (
     <section id="welcome">
       <p ref={subtitleRef}>
-        {renderText(
-          "Hey, I'm Ebad! Welcome to my",
-          "text-3xl font-georama",
-          "100"
-        )}{" "}
+        {renderText("Hey, I'm Ebad! I code,", "text-3xl font-georama", "100")}{" "}
       </p>
       <h1 ref={titleRef} className="mt-7">
-        {renderText("portfolio", "text-9xl italic font-georama")}
+        {renderText("therefore I am.", "text-8xl italic font-georama")}
       </h1>
 
       <div className="small-screen">

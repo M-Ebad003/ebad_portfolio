@@ -132,15 +132,22 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/M-Ebad003",
   },
   {
-    id: 4,
+    id: 2,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/muhammad-ebad-39a944285/",
   },
+  {
+    id: 3,
+    text: "Upwork",
+    icon: "/icons/upwork.svg.png",
+    bg: "#f4656b",
+    link: "https://www.upwork.com/freelancers/~01a5af7476568dc2bd",
+  }
 ];
 
 const photosLinks = [
@@ -383,7 +390,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/ebad.jpeg",
     },
     {
       id: 2,
@@ -411,12 +418,12 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      // image: "/images/ebad.jpeg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I’m Ebad 👋, a frontend-focused full-stack developer who builds sleek, high-performing websites and landing pages that don’t just look good—they work flawlessly.",
+        "I specialize in JavaScript, React, Next.js, and love crafting smooth, reusable UI components. Clean code and great UX are my jam.",
+        "I’ve deployed 30+ apps on Vercel and built multi-tenant front-end projects, so I know how to ship things that actually scale.",
+        "Off work, I’m chasing pixels, coffee, games, and gadgets I probably don’t need 😅",
       ],
     },
   ],

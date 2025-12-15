@@ -90,27 +90,54 @@ body {
     }
 
     .dock-icon {
-      @apply size-14 3xl:size-20 cursor-pointer;
+      @apply size-14 3xl:size-20 cursor-pointer relative;
 
       img {
         @apply object-cover object-center;
       }
+    }
+
+    .dock-icon::after {
+      content: "";
+      @apply absolute bottom-0 left-1/2 h-0.75 bg-gray-200 rounded-full;
+      width: 60%;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: center;
+      transition: transform 250ms ease-out;
+    }
+    .dock-icon.active::after {
+      transform: translateX(-50%) scaleX(1);
     }
   }
 
   #window-controls {
     @apply flex gap-2;
 
+    .dot {
+      @apply size-3.5 rounded-full relative cursor-pointer;
+    }
+
+    .dot::after {
+      content: attr(data-tip);
+      @apply absolute left-1/2 -translate-x-1/2 top-6
+           px-2 py-1 text-xs rounded bg-black text-white opacity-0 pointer-events-none
+           transition-opacity duration-200 whitespace-nowrap;
+    }
+
+    .dot:hover::after {
+      @apply opacity-100;
+    }
+
     .close {
-      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+      @apply bg-[#ff6157];
     }
 
     .minimize {
-      @apply size-3.5 rounded-full bg-[#ffc030];
+      @apply bg-[#ffc030];
     }
 
     .maximize {
-      @apply size-3.5 rounded-full bg-[#2acb42];
+      @apply bg-[#2acb42];
     }
   }
 

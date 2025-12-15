@@ -7,7 +7,7 @@ import React, { useLayoutEffect, useRef } from "react";
 const WindowWrapper = (Component, windowKey) => {
   const Wrapped = (props) => {
     const { focusWindow, windows } = useWindowStore();
-    const { isOpen, zIndex } = windows[windowKey];
+    const { isOpen, zIndex, isMaximized, isMinimized } = windows[windowKey];
     const ref = useRef(null);
 
     useGSAP(() => {
@@ -51,7 +51,18 @@ const WindowWrapper = (Component, windowKey) => {
     }, [isOpen]);
 
     return (
-      <section className="absolute" id={windowKey} style={{ zIndex }} ref={ref}>
+      <section
+        className={`absolute ${
+          isMaximized ? "inset-0 w-full h-full rounded-none" : ""
+        }`}
+        id={windowKey}
+        style={{
+          width: isMaximized ? "100%" : "",
+          height: isMaximized ? "100%" : "",
+          zIndex: zIndex,
+        }}
+        ref={ref}
+      >
         <Component {...props} />
       </section>
     );

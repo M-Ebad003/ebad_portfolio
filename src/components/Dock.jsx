@@ -76,7 +76,7 @@ const Dock = () => {
           <div key={v?.id} className="relative flex justify-center">
             <button
               type="button"
-              className="dock-icon"
+              className={`dock-icon group ${windows[v?.id]?.isOpen ? "active" : ""}`}
               aria-label={v?.name}
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={v?.name}

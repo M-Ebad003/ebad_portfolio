@@ -27,7 +27,7 @@ const Resume = () => {
           <DownloadIcon className="icon" />
         </a>
       </div>
-      <div className="max-h-150 overflow-y-scroll">
+      <div className="max-h-150 overflow-auto">
         <Document file="files/resume.pdf">
           <Page
             pageNumber={1}

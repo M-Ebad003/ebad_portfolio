@@ -66,12 +66,12 @@ const dockApps = [
     icon: "terminal.png",
     canOpen: true,
   },
-  {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
-  },
+  // {
+  //   id: "trash",
+  //   name: "Archive", // was "Trash"
+  //   icon: "trash.png",
+  //   canOpen: false,
+  // },
 ];
 
 const blogPosts = [
@@ -102,11 +102,19 @@ const blogPosts = [
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["React.js", "Next.js", "TypeScript", "JavaScript"],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    category: "State Management",
+    items: ["Zustand", "Stan.js"],
+  },
+  {
+    category: "Data & Forms",
+    items: ["TanStack Query", "Formik", "Yup", "Zod"],
+  },
+  {
+    category: "Charts",
+    items: ["Recharts"],
   },
   {
     category: "Styling",
@@ -114,7 +122,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express"],
+    items: ["Node.js", "Express.js"],
   },
   {
     category: "Database",
@@ -122,7 +130,7 @@ const techStack = [
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub"],
+    items: ["Git", "GitHub", "Vercel"],
   },
 ];
 
@@ -218,7 +226,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Criterion Website",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -226,44 +234,35 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Criterion Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "The Criterion real estate landing page is a clean, modern platform designed to showcase premium properties with clarity and impact.",
+            "Rather than feeling like a typical property listing site, it focuses on strong visuals, clear calls-to-action, and a smooth user journey.",
+            "It gives visitors the feel of stepping into a high-end real estate experience—right from their screen.",
+            "Built with Next.js and Tailwind CSS, the site delivers fast performance, responsive layouts, and a polished, trustworthy look.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "criterion.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://criterion-dun.vercel.app/",
           position: "top-10 right-20",
         },
         {
-          id: 4,
-          name: "nike.png",
+          id: 3,
+          name: "criterion.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },
@@ -271,7 +270,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Brainwave Landing Page",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -279,44 +278,36 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Brainwave Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "The Brainwave landing page showcases an AI-powered chat platform with a modern and engaging design.",
+            "It focuses on clear messaging, smooth animations, and strong visual hierarchy to explain the product effortlessly.",
+            "Rather than feeling static, the page creates an interactive, futuristic experience that highlights AI capabilities.",
+            "Built with Next.js and Tailwind CSS, it delivers fast load times, responsive layouts, and a polished UI.",
           ],
+
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "brainwave.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://brain-wave-phi-lime.vercel.app/",
           position: "top-20 left-20",
         },
         {
-          id: 4,
-          name: "ai-resume-analyzer.png",
+          id: 3,
+          name: "brainwave.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
           imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
         },
       ],
     },
@@ -324,7 +315,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Multi-Tenant Admin System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -332,44 +323,36 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Multi-Tenant Admin System.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "The Multi-Tenant Gym Admin System is a centralized platform designed to manage multiple gyms through a single, unified interface.",
+            "Each gym owner has access to their own members, staff, schedules, and payments, with complete data isolation.",
+            "Instead of separate systems for every location, it provides a streamlined dashboard tailored for daily gym operations.",
+            "Built with modern web technologies, the system delivers scalability, security, and a clean, easy-to-use admin experience.",
           ],
+
         },
-        {
-          id: 2,
-          name: "food-delivery-app.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
-          position: "top-10 right-20",
-        },
+        // {
+        //   id: 2,
+        //   name: "food-delivery-app.com",
+        //   icon: "/images/safari.png",
+        //   kind: "file",
+        //   fileType: "url",
+        //   href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+        //   position: "top-10 right-20",
+        // },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "multi-tenant-admin-system.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },
@@ -392,24 +375,24 @@ const ABOUT_LOCATION = {
       position: "top-10 left-5",
       imageUrl: "/images/ebad.jpeg",
     },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
-    },
+    // {
+    //   id: 2,
+    //   name: "casual-me.png",
+    //   icon: "/images/image.png",
+    //   kind: "file",
+    //   fileType: "img",
+    //   position: "top-28 right-72",
+    //   imageUrl: "/images/adrian-2.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   name: "conference-me.png",
+    //   icon: "/images/image.png",
+    //   kind: "file",
+    //   fileType: "img",
+    //   position: "top-52 left-80",
+    //   imageUrl: "/images/adrian-3.jpeg",
+    // },
     {
       id: 4,
       name: "about-me.txt",
